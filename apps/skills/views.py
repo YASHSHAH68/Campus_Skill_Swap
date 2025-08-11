@@ -139,7 +139,7 @@ class SkillCategoryListView(ListView):
         return SkillCategory.objects.filter(is_active=True).annotate(
             skills_count=Count('skills', distinct=True),
             students_count=Count('skills__offered_by_users', distinct=True)
-        )
+        ).order_by('name')
 
 
 class SkillCategoryDetailView(DetailView):

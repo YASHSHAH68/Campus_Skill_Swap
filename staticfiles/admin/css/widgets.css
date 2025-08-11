@@ -43,6 +43,12 @@
     color: var(--breadcrumbs-fg);
 }
 
+.showing-info {
+     font-size: 1.125rem;  /* approx 18px, bigger than normal */
+    font-weight: 700;     /* bold */
+    color: #374151;       /* text-gray-700 for a strong but not black color */
+    margin-top: 1rem;  
+}
 .selector-chosen-title {
     background: var(--secondary);
     color: var(--header-link-color);
